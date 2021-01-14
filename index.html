@@ -4,11 +4,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="dist/style.css" rel="stylesheet">
   <title>Document</title>
 </head>
 
 <body>
-  Hello
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__pic">
+        <img src="./src/assets/cleaning_sofa.jpg" alt="">
+      </div>
+      <div class="header__form form">
+        <form class="">
+          <h2 class="form__title">Не нашли подходящую услугу или не знаете с чего начать?</h2>
+          <p class="form__text">Оставьте заявку и наш специалист свяжется с вами, даст полную и детальную информацию
+            бесплатно!</p>
+          <div class="form__inputs">
+            <input type="text" placeholder="Имя">
+            <input type="text" placeholder="Телефон">
+          </div>
+
+          <label class="form__checkbox">
+            <input type="checkbox">
+            <p>согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности.</p>
+          </label>
+          <button class="form__button">Отправить</button>
+        </form>
+      </div>
+      <div class="header__contact">
+        <p>С вами свяжутся в течение 5 минут!</p>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="certificate">
+        <h2 class="certificate__title">Сертификаты</h2>
+        <p>Гарантия высокого качества работ</p>
+        <p>В компании «Стс-Уборка» ежегодно выполняет сертификацию
+          клининговых услуг с правом аккредитации других организаций
+          в качестве Органов по сертификации в Системе СДС «СККР».</p>
+        <div class="carusel">
+          <img src="./src/assets/certificate.jpg" alt="">
+          <img src="./src/assets/certificate.jpg" alt="">
+        </div>
+      </section>
+      <section class="results">
+        <h2 class="results__title">Сертификаты</h2>
+        <p>Ежедневная уборка коммерческих помещений, спецработы, уборка на
+          мероприятиях, а также специальные услуги.</p>
+        <div class="results__gallery gallery">
+          <div class="gallery__items">
+            <div class="gallery__item">
+              <img src="./src/assets/livingroom.jpg" alt="">
+              <p>Lorem ipsum</p>
+            </div>
+            <div class="gallery__item">
+              <img src="./src/assets/table.jpg" alt="">
+              <p>Lorem ipsum</p>
+            </div>
+            <div class="gallery__item">
+              <img src="./src/assets/kitchen.jpg" alt="">
+              <p>Lorem ipsum</p>
+            </div>
+            <div class="gallery__item">
+              <img src="./src/assets/bedroom.jpg" alt="">
+              <p>Lorem ipsum</p>
+            </div>
+            <div class="gallery__item">
+              <img src="./src/assets/stairs.jpg" alt="">
+              <p>Lorem ipsum</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="choose">
+        <h2>Выберите услугу</h2>
+        <div class="choose__toggle-bar">
+          <ul>
+            <li>Компаниям</li>
+            <li>Частным клиентам</li>
+            <li>Спец. услуги</li>
+          </ul>
+        </div>
+        <div class="servicebar service">
+          <div class="service__item">
+            <img src="./src/assets/glove.svg" alt="">
+            <h3 class="service__item__title">Ежедневная уборка</h3>
+            <p class="service__item__text">Квартир, зданий, производственных помещений и офиcов</p>
+          </div>
+          <div class="service__item">
+            <img src="./src/assets/vacuumcleaner.svg" alt="">
+            <h3 class="service__item__title">Промышленный клининг</h3>
+            <p class="service__item__text">Квартир, зданий, производственных помещений и офсиов</p>
+          </div>
+          <div class="service__item">
+            <img src="./src/assets/windowcleaning.svg" alt="">
+            <h3 class="service__item__title">Мойка окон и фасадов</h3>
+            <p class="service__item__text">Квартир, зданий, производственных помещений и офсиов</p>
+          </div>
+          <div class="service__item">
+            <img src="./src/assets/cleaningmen.svg" alt="">
+            <h3 class="service__item__title">Уборка офисов под ключ</h3>
+            <p class="service__item__text">Квартир, зданий, производственных помещений и офсиов</p>
+          </div>
+          <div class="service__item">
+            <img src="./src/assets/trash.svg" alt="">
+            <h3 class="service__item__title">Послестроительная уборка</h3>
+            <p class="service__item__text">Квартир, зданий, производственных помещений и офсиов</p>
+          </div>
+          <div class="service__item">
+            <img src="./src/assets/housecleaning.svg" alt="">
+            <h3 class="service__item__title">Клининг для ТСЖ, ЖСК, УК</h3>
+            <p class="service__item__text">Квартир, зданий, производственных помещений и офсиов</p>
+          </div>
+          <div class="service__item">
+            <img src="./src/assets/bubbles.svg" alt="">
+            <h3 class="service__item__title">Обслуживание мероприятий</h3>
+            <p class="service__item__text">Квартир, зданий, производственных помещений и офсиов</p>
+          </div>
+          <div class="service__item">
+            <img src="./src/assets/worker.svg" alt="">
+            <h3 class="service__item__title">Предоставление персонала</h3>
+            <p class="service__item__text">Квартир, зданий, производственных помещений и офсиов</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./dist/index.js"></script>
 </body>
 
 </html>
