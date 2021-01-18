@@ -21,13 +21,13 @@
             <p class="form__text">Оставьте заявку и наш специалист свяжется с вами, даст полную и детальную информацию
               бесплатно!</p>
             <div class="form__inputs">
-              <input type="text" name="name" placeholder="Имя" required>
-              <input type="tel" name="phone" pattern="(\+?\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}"
-                placeholder="+7(999)888-77-66" required>
+              <input type="text" name="name" placeholder="Имя" class="_req">
+              <input type="tel" name="phone" class="_tel _req" pattern="(\+?\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}"
+                placeholder="+7(999)888-77-66">
             </div>
 
             <label class="form__checkbox">
-              <input type="checkbox" class="form__checkbox-input" required>
+              <input type="checkbox" class="form__checkbox-input _req" name="agreement">
               <p>согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности.</p>
             </label>
             <button type="submit" class="form__button">Отправить</button>

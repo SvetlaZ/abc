@@ -215,6 +215,7 @@ p {
       display: inline-flex;
       align-items: center;
       position: relative;
+      cursor: pointer;
     }
 
     p::before {
@@ -232,6 +233,7 @@ p {
 
     p::after {
       transition: transform 0.5s ease 0s;
+      color: #5C6BC0;
       content: "\2714";
       position: absolute;
       left: 2px;
@@ -257,6 +259,11 @@ p {
     font-family: 'Raleway-semi-bold';
     font-size: 17px;
     line-height: 24px;
+    transition: background-color 0.5s ease 0s;
+  }
+
+  &__button:hover {
+    background-color: #3c4786;
   }
 
   &__inputs {
@@ -280,6 +287,10 @@ p {
       color: #333333;
       opacity: 0.2;
     }
+  }
+
+  input._error {
+    box-shadow: 0 0 1px red;
   }
 }
 
