@@ -212,18 +212,39 @@ p {
       line-height: 16px;
       color: #333333;
       opacity: 0.8;
+      display: inline-flex;
+      align-items: center;
+      position: relative;
     }
 
-    input {
-      font-family: 'Raleway-normal';
+    p::before {
+      content: "";
+      flex: 0 0 13px;
+      height: 13px;
       background: #FFFFFF;
       border: 1px solid #DBDBDB;
       box-sizing: border-box;
       border-radius: 4px;
-      width: 13px;
-      height: 13px;
+      align-self: flex-start;
       margin-right: 12px;
       margin-top: 4px;
+    }
+
+    p::after {
+      transition: transform 0.5s ease 0s;
+      content: "\2714";
+      position: absolute;
+      left: 2px;
+      top: 2px;
+      transform: scale(0);
+    }
+
+    input {
+      display: none;
+    }
+
+    input:checked + p::after {
+      transform: scale(1);
     }
   }
 
