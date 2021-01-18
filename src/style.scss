@@ -343,7 +343,19 @@ p {
       color: #000;
       margin-top: 20px;
     }
+
+    transform: translate(0px, 0px);
+    transition: all 0.8s ease 0s;
   }
+
+  &__item:nth-child(odd)._active {
+    transform: translate(0px, -91px);
+  }
+
+  &__item:nth-child(2)._active {
+    transform: translate(0px, -186px);
+  }
+  
 }
 
 .wrapper__choose {
