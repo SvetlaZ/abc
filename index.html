@@ -21,13 +21,13 @@
             <p class="form__text">Оставьте заявку и наш специалист свяжется с вами, даст полную и детальную информацию
               бесплатно!</p>
             <div class="form__inputs">
-              <input type="text" name="name" placeholder="Имя" class="_req">
+              <input type="text" name="name" placeholder="Имя" class="_req" required>
               <input type="tel" name="phone" class="_tel _req" pattern="(\+?\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}"
-                placeholder="+7(999)888-77-66">
+                placeholder="+7(999)888-77-66" required>
             </div>
 
             <label class="form__checkbox">
-              <input type="checkbox" class="form__checkbox-input _req" name="agreement">
+              <input type="checkbox" class="form__checkbox-input _req" checked name="agreement" required>
               <p>согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности.</p>
             </label>
             <button type="submit" class="form__button">Отправить</button>
@@ -51,8 +51,26 @@
           </div>
 
           <div class="certificate__carusel">
-            <img src="./src/assets/certificate.jpg" alt="">
-            <img src="./src/assets/certificate.jpg" alt="">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./src/assets/certificate.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./src/assets/certificate.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./src/assets/certificate.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./src/assets/certificate.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./src/assets/certificate.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./src/assets/certificate.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./src/assets/certificate.jpg" alt=""></div>
+              </div>
+
+              <!-- <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div> -->
+
+            </div>
+
+            <div class="certificate__carusel-buttons">
+              <div class="swiper-button-prev-unique"><img src="src/assets/left-arrow.svg" alt=""></div>
+              <div class="swiper-button-next-unique"><img src="src/assets/right-arrow.svg" alt=""></div>
+            </div>
           </div>
         </div>
       </section>
@@ -98,13 +116,13 @@
           <div class="choose__togglebar togglebar">
             <h2>Выберите услугу</h2>
             <ul class="togglebar__items">
-              <li class="togglebar__item active">Компаниям</li>
-              <li class="togglebar__item">Частным клиентам</li>
-              <li class="togglebar__item">Спец. услуги</li>
+              <li class="togglebar__item active" data-type="all">Компаниям</li>
+              <li class="togglebar__item" data-type="private">Частным клиентам</li>
+              <li class="togglebar__item" data-type="other">Спец. услуги</li>
             </ul>
           </div>
           <div class="servicebar service">
-            <div class="service__item">
+            <div class="service__item" data-description="private">
               <img src="./src/assets/glove.svg" alt="">
               <h3 class="service__item__title">Ежедневная уборка</h3>
               <p class="service__item__text">Квартир, зданий, производственных помещений и офиcов</p>
@@ -116,13 +134,13 @@
               <p class="service__item__text">Квартир, зданий, производственных помещений и офсиов</p>
               <a href="#">Подробнее</a>
             </div>
-            <div class="service__item">
+            <div class="service__item" data-description="private">
               <img src="./src/assets/windowcleaning.svg" alt="">
               <h3 class="service__item__title">Мойка окон и фасадов</h3>
               <p class="service__item__text">Квартир, зданий, производственных помещений и офсиов</p>
               <a href="#">Подробнее</a>
             </div>
-            <div class="service__item">
+            <div class="service__item" data-description="other">
               <img src="./src/assets/cleaningmen.svg" alt="">
               <h3 class="service__item__title">Уборка офисов под ключ</h3>
               <p class="service__item__text">Квартир, зданий, производственных помещений и офсиов</p>
@@ -134,19 +152,19 @@
               <p class="service__item__text">Квартир, зданий, производственных помещений и офсиов</p>
               <a href="#">Подробнее</a>
             </div>
-            <div class="service__item">
+            <div class="service__item" data-description="other">
               <img src="./src/assets/housecleaning.svg" alt="">
               <h3 class="service__item__title">Клининг для ТСЖ, ЖСК, УК</h3>
               <p class="service__item__text">Квартир, зданий, производственных помещений и офсиов</p>
               <a href="#">Подробнее</a>
             </div>
-            <div class="service__item">
+            <div class="service__item" data-description="other">
               <img src="./src/assets/bubbles.svg" alt="">
               <h3 class="service__item__title">Обслуживание мероприятий</h3>
               <p class="service__item__text">Квартир, зданий, производственных помещений и офсиов</p>
               <a href="#">Подробнее</a>
             </div>
-            <div class="service__item">
+            <div class="service__item" data-description="other">
               <img src="./src/assets/worker.svg" alt="">
               <h3 class="service__item__title">Предоставление персонала</h3>
               <p class="service__item__text">Квартир, зданий, производственных помещений и офсиов</p>
